@@ -1,0 +1,33 @@
+{
+	"schemaVersion": 1,
+	"id": "item_commands",
+	"version": "${version}",
+	"name": "Item Commands",
+	"description": "This mod adds data-driven command-running using items",
+	"authors": [
+		"AutisticPlush"
+	],
+	"contact": {
+	},
+	"license": "ARR",
+	"icon": "assets/item_commands/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			{
+				"value": "net.galaxyy.itemcommands.ItemCommands",
+				"adapter": "kotlin"
+			}
+		]
+	},
+	"mixins": [
+		"item_commands.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.2",
+		"java": ">=25",
+		"fabric-api": "*",
+		"fabric-language-kotlin": "*"
+	}
+}
